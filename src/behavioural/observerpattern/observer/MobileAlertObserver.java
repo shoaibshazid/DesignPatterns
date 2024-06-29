@@ -13,6 +13,10 @@ public class MobileAlertObserver implements NotificationAlertObserver{
     }
     @Override
     public void update() {
-
+        sendMobileUpdate(mobileNumber);
+    }
+    private void sendMobileUpdate(int mobileNumber) {
+        System.out.println("MobileAlertObserver: sendMobileUpdate");
+        System.out.println("MobileAlertObserver: mobileNumber: " + mobileNumber);
     }
 }

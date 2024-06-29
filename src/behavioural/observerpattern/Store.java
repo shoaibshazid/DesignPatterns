@@ -21,6 +21,10 @@ public class Store {
         iphoneStockObservable.setStock(10);
         iphoneStockObservable.setStock(10);
 
+        iphoneStockObservable.remove(observer1);
+
+        iphoneStockObservable.notifyObservers();
+
         int count = iphoneStockObservable.getStock();
         System.out.println(count);
 
